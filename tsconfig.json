@@ -17,7 +17,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "enkey-ng-api-normalizer": [
+        "dist/enkey/ng-api-normalizer/enkey-ng-api-normalizer",
+        "dist/enkey/ng-api-normalizer"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

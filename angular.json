@@ -1,6 +1,47 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "enkey-ng-api-normalizer-base": {
+      "projectType": "library",
+      "root": "projects/enkey-ng-api-normalizer-base",
+      "sourceRoot": "projects/enkey-ng-api-normalizer-base/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.lib.json",
+            "project": "projects/enkey-ng-api-normalizer-base/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/enkey-ng-api-normalizer-base/src/test.ts",
+            "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.spec.json",
+            "karmaConfig": "projects/enkey-ng-api-normalizer-base/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/enkey-ng-api-normalizer-base/tsconfig.lib.json",
+              "projects/enkey-ng-api-normalizer-base/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "enkey-ng-api-normalizer-base"
 }
