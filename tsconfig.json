@@ -20,8 +20,8 @@
     ],
     "paths": {
       "enkey-ng-api-normalizer": [
-        "dist/enkey/ng-api-normalizer/enkey-ng-api-normalizer",
-        "dist/enkey/ng-api-normalizer"
+        "dist/ng-api-normalizer/ng-api-normalizer",
+        "dist/ng-api-normalizer"
       ]
     }
   },

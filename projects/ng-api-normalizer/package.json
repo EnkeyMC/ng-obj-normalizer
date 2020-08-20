@@ -1,0 +1,15 @@
+{
+  "name": "ng-api-normalizer",
+  "version": "1.0.0",
+  "author": "Martin Omacht",
+  "description": "API object normalizer service for Angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EnkeyMC/ng-obj-normalizer"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": ">=7.0.0",
+    "tslib": ">=1.7.0"
+  }
+}

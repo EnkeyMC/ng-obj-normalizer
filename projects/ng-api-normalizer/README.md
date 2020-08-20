@@ -1,4 +1,4 @@
-# @enkey/ng-api-normalizer
+# ng-api-normalizer
 Author: Martin Omacht
 
 ## Introduction

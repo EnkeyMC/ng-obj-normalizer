@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "enkey-ng-api-normalizer-base": {
+    "ng-api-normalizer-base": {
       "projectType": "library",
-      "root": "projects/enkey-ng-api-normalizer-base",
-      "sourceRoot": "projects/enkey-ng-api-normalizer-base/src",
+      "root": "projects/ng-api-normalizer",
+      "sourceRoot": "projects/ng-api-normalizer/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.lib.json",
-            "project": "projects/enkey-ng-api-normalizer-base/ng-package.json"
+            "tsConfig": "projects/ng-api-normalizer/tsconfig.lib.json",
+            "project": "projects/ng-api-normalizer/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ng-api-normalizer/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/enkey-ng-api-normalizer-base/src/test.ts",
-            "tsConfig": "projects/enkey-ng-api-normalizer-base/tsconfig.spec.json",
-            "karmaConfig": "projects/enkey-ng-api-normalizer-base/karma.conf.js"
+            "main": "projects/ng-api-normalizer/src/test.ts",
+            "tsConfig": "projects/ng-api-normalizer/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-api-normalizer/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/enkey-ng-api-normalizer-base/tsconfig.lib.json",
-              "projects/enkey-ng-api-normalizer-base/tsconfig.spec.json"
+              "projects/ng-api-normalizer/tsconfig.lib.json",
+              "projects/ng-api-normalizer/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -43,5 +43,5 @@
         }
       }
     }},
-  "defaultProject": "enkey-ng-api-normalizer-base"
+  "defaultProject": "ng-api-normalizer"
 }

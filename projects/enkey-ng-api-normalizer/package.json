@@ -1,8 +1,0 @@
-{
-  "name": "@enkey/ng-api-normalizer",
-  "version": "1.0.0",
-  "peerDependencies": {
-    "@angular/core": ">=7.0.0",
-    "tslib": ">=1.7.0"
-  }
-}
