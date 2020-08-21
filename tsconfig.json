@@ -19,7 +19,7 @@
       "dom"
     ],
     "paths": {
-      "enkey-ng-api-normalizer": [
+      "ng-api-normalizer": [
         "dist/ng-api-normalizer/ng-api-normalizer",
         "dist/ng-api-normalizer"
       ]

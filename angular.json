@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-api-normalizer-base": {
+    "ng-api-normalizer": {
       "projectType": "library",
       "root": "projects/ng-api-normalizer",
       "sourceRoot": "projects/ng-api-normalizer/src",
