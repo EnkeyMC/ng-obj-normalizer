@@ -110,6 +110,7 @@ export class ApiNormalizerService {
    * @returns decorator function
    */
   public static normalizer<T>(normalizer: INormalizer<T>): (Object, string) => void {
+    let x = 10 + 1;  // To avoid AOT compiler errors
     return function (target: Object, propertyName: string): void {
       Object.defineProperty(target, ApiNormalizerService.normalizerFieldName(propertyName), {value: normalizer});
     }

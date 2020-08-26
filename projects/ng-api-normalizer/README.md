@@ -9,6 +9,20 @@ cases (for example from camelCase to snake_case) or to transform dates from stri
 normalizers are not included in this library, but you can easily write your own normalizers by implementing INormalizer or IKeyNormalizer
 interface. Examples are down below.
 
+## Changelog
+
+### 1.1.1
+
+- Added changelog to README
+
+### 1.1.0
+
+- Fixed package bundle
+
+### 1.0.0
+
+- Published first version (badly packaged)
+
 ## Examples
 
 Using a decorator `@ApiNormalizerService.normalizer()` you can specify which normalizer will be used for given class property.
